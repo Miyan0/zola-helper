@@ -2,7 +2,8 @@
 
 Generates Zola's markdown and json files for a different language.
 The generated files content is copied from the source files.
-This script assumes to be run in the root folder of the Zola project.
+
+**NOTE**: This script assumes to be run in the root folder of the Zola project.
 
 ## Dependencies
 
