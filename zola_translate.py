@@ -22,7 +22,7 @@ python zola_translate en -r ./mydir/other
 
 Currently, this will generate translated file for '.md' or '.json' extensions.
 To generate other file types, add them to VALID_FILE_EXTENSIONS constant.
-To generate only markdown files, remove other extensions from VALID_FILE_EXTENSIONS constant.
+To generate only markdown files, replace VALID_FILE_EXTENSIONS value with ('.md',).
 
 NOTE: VALID_FILE_EXTENSIONS is a Tuple so, don't forget the ending comma if
       it has only one element! 
@@ -30,8 +30,8 @@ NOTE: VALID_FILE_EXTENSIONS is a Tuple so, don't forget the ending comma if
 
 NOTE: In order to prevent generating files like 'index.en.it.md' this script
       only split on '.' and skip any file with more one dot ('.') in its name.
-      This is not ideal (and there are many ways to handle this) but it is fine
-      for now.
+      This is not ideal (and there are many ways to handle this) but it works
+      me. 
 
 NOTE: May also work for Hugo project, but I didn't test it.
 
